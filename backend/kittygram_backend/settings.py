@@ -8,7 +8,9 @@ SECRET_KEY = 'django-insecure-cg6*%6d51ef8f#4!r3*$vmxm4)abgjw8mo!4y-q*uq1!4$-89$
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['84.252.136.106', '127.0.0.1', 'localhost', 'kittydocker1.ddns.net']
+
+USE_X_FORWARDED_HOST = True
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -101,9 +103,9 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR / 'collected_static'
 
-MEDIA_URL = '/media/' 
+MEDIA_URL = '/media/'
 
-MEDIA_ROOT =  BASE_DIR / '/var/www/kittygram/media'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
