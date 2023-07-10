@@ -1,6 +1,6 @@
 <h1>kittygram_final</h1>
-![CI/CD Pipeline](https://github.com/EVA666999/kittygram_final/workflows/Main%20Kittygram%20workflow/badge.svg)
 <p>Добро пожаловать в репозиторий проекта Kittygram_final!</p>
+<p>![CI/CD Pipeline](https://github.com/EVA666999/kittygram_final/workflows/Main%20Kittygram%20workflow/badge.svg)</p>
 <p>Kittygram_fibal - Этот проект основная задача в котором была работа с Docker.
 Мне необходимо было собрать контейнеры и развернуть их в виде образов на рабочем сервере.:</p>
 
