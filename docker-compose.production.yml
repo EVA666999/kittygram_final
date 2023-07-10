@@ -11,6 +11,7 @@ services:
     env_file: .env
     volumes:
       - pg_data4:/var/lib/postgresql/data
+
   backend:
     image: ihnupfidi/kittygram_backend
     env_file: .env
@@ -19,12 +20,16 @@ services:
       - media:/app/media
     depends_on:
       - bd4
+
   frontend:
     env_file: .env
     image: ihnupfidi/kittygram_frontend
     command: cp -r /app/build/. /frontend_static/
     volumes:
       - static:/frontend_static
+    depends_on:
+      - backend
+
   gateway:
     image: ihnupfidi/kittygram_gateway
     env_file: .env
